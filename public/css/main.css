@@ -1,0 +1,365 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 10px;
+  }
+  
+  .header {
+	padding: 20px;
+	background-attachment: fixed;
+	background-image: url("../img/capa-madmax2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	position: relative;
+  }
+  
+  .header:after {
+	background: linear-gradient(
+	  0deg,
+	  rgba(0, 0, 0, 0.6) 0%,
+	  rgba(0, 212, 255, 0) 75%
+	);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+  }
+  
+  .header-content {
+	z-index: 2;
+  }
+  
+  .header-content h2 {
+	color: #ffffff;
+	font-size: 6.5em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin: 0;
+	text-transform: uppercase;
+  }
+  
+  .navbar-top {
+	display: flex;
+	color: #ffffff;
+	z-index: 2;
+  }
+  
+  .navbar-top .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .container {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+  }
+  
+  .username {
+	display: flex;
+	align-items: center;
+  }
+  
+  .username-picture {
+	border-radius: 100%;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	height: 45px;
+	margin-right: 15px;
+	overflow: hidden;
+	width: 45px;
+	display: flex;
+  }
+  
+  .username-picture img {
+	width: 100%;
+  }
+  
+  .username span {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+  }
+  
+  .menu {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .menu li {
+	cursor: pointer;
+	margin: 0 25px;
+  }
+  
+  .menu li a {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.3em;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .menu li a:hover {
+	color: #e4bb23;
+  }
+  
+  .header-content .generos {
+	margin: 15px 0 30px;
+	font-size: 13px;
+	display: flex;
+  }
+  
+  .header-content .generos a {
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+	margin-right: 15px;
+  }
+  
+  .header-content .generos a:hover {
+	color: #e4bb23;
+  }
+  
+  .header-content .button{
+	display: inline-block;
+	padding: 15px 50px;
+	color: #000;
+	font-size: 1.5em;
+	text-decoration: none;
+	background-color: #e4bb23;
+	border-radius: 40px;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .header-content .button:hover {
+	background-color: #bc9a1d;
+  }
+  
+  .header-content .button i{
+	font-size: 1.5em;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+  }
+  
+  .header-content .header-detalhes{
+	padding: 20px 0;
+	font-size: 1.4em;
+	color: #fff;
+  }
+  
+  .header-content .header-detalhes p:last-child{
+	color: #bc9a1d;
+  }
+  
+  .main{
+	background-color: #f2f2f2;
+	width: 100%;
+  }
+  
+  .navbar-catalog-menu{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+  
+  .navbar-catalog-menu li{
+	margin: 0 20px;
+  }
+  
+  .navbar-catalog-menu li a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #e4bb23;
+	display: inline-block;
+	padding: 25px 0;
+	font-size: 1.3em;
+	font-weight: bold;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .navbar-catalog-menu li a:hover{
+	box-shadow: inset 0 -1px 0 #e4bb23;
+  }
+  
+  .filmes{
+	padding: 20px 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .filmes li{
+	list-style: none;
+	width: 24%;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+	overflow: hidden;
+  }
+  
+  .card-header figure{
+	margin: 0;
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .card-header figure img{
+	width: 100%;
+	height: auto;
+  }
+  
+  .card-body{
+	padding: 10px;
+	width: 100%;
+  }
+  
+  .card-body h3{
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 0;
+	text-transform: uppercase;
+  }
+  
+  .card-body a{
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #e4bb23;
+  }
+  
+  .card-body a:hover{
+	text-decoration: underline;
+  }
+  
+  .card-body p:last-child{
+	display: flex;
+	justify-content: space-between;
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0;
+	align-items: center;
+  }
+  
+  .card-body i{
+	color: #ccc;
+	cursor: pointer;
+  }
+  
+  .card-body i:hover{
+	color: #e74c3c;
+  }
+  
+  .card-video{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	opacity: 0;
+	padding: 80px 20px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	transition: all 0.2s ease-in-out;
+	visibility: hidden;
+	width: 100%;
+	z-index: 1;
+  }
+  
+  .card-video h3{
+	color: #e4bb23;
+	font-size: 2em;
+	line-height: 1em;
+	text-transform: uppercase;
+  }
+  
+  .card-video a{
+	color: #fff;
+	font-size: 5em;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .card-li:hover .card .card-header .card-video{
+	  opacity: 1;
+	  visibility: visible;
+  }
+  
+  .card-video a:hover {
+	  color: #e4bb23;
+  }
+  
+  .footer{
+	background-color: #fff;
+	color: #bababa;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+  }
+  
+  .footer .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .footer-contact{
+	display: flex;
+	padding: 0;
+  }
+  
+  .footer-contact li{
+	list-style: none;
+	margin: 0 20px;
+  }
+  
+  .footer-contact li a{
+	font-size: 2.5em;
+	color: #bababa;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .footer-contact li:last-child{
+	margin-right: 0;
+  }
+  
+  .twitter a:hover {
+	color: #55acee;
+  }
+  
+  .facebook a:hover {
+	color: #3b5998;
+  }
+  
+  .instagram a:hover {
+	color: #e95950;
+  }
